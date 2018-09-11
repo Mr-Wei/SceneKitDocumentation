@@ -1,10 +1,10 @@
 ## SceneKit
 使用高级别的场景描述方式创建3D游戏和向APP中添加3D内容。轻松添加动画、物理模拟、粒子效果和基于真实感的物理渲染。
-###Overview
+### Overview
 SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D资源的描述性API。与Metal和OpenGL等这样的要求您精确地实现显示场景的渲染算法细节的低级API不同，SceneKit只需要描述场景的内容以及您希望它执行的动作或动画。
 
-##Topics
-###First Steps
+## Topics
+### First Steps
 * [class SCNScene](https://github.com/Mr-Wei/SceneKitDocumentation/blob/master/SceneKit/SCNScene/SCNScene.md) 
 
 	节点层级视图和全局属性的容器，共同形成可显示的3D场景。
@@ -26,7 +26,7 @@ SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D�
 
 	场景图节点，用于从单独的场景文件加载内容的占位符。
 	
-###Display and Interactivity 显示与交互
+### Display and Interactivity 显示与交互
 * protocol SCNSceneRenderer
 	
 	SCNView,SCNLayer,SCNRenderer共有的方法和属性
@@ -47,7 +47,7 @@ SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D�
 	
 	包含了场景控件和视图空间对场景元素的搜索结果的相关信息。
 	
-###Lighting, Cameras, and Shading 光线,摄像机和阴影
+### Lighting, Cameras, and Shading 光线,摄像机和阴影
 * class SCNLight
 	
 	一种可以被添加到节点上来点亮场景的光源。
@@ -63,7 +63,7 @@ SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D�
 	
 	一个用来存放材料的某种视觉特性的颜色或纹理的容器。
 
-###Geometry 几何体
+### Geometry 几何体
 * class SCNGeometry
 
 	一种三维形状（也称为模型或网格），可以在场景中显示，附带材料可以定义其外观。
@@ -80,7 +80,7 @@ SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D�
 	
 	从2D文本和贝塞尔曲线生成的3D对象的基本形状（例如球体, 盒子,飞机等）和特征。
 	
-###Animation and Constraints 动画和约束
+### Animation and Constraints 动画和约束
 * 动画
 	
 	通过按照预先设定好的方式移动场景中的元素来创建声明式动画，或者管理通过外部工具导入的动画。
@@ -97,11 +97,11 @@ SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D�
 	
 	管理节点基础几何体和一个或多个目标几何体之间平滑过渡的对象。
 	
-###Physics 物理现象
+### Physics 物理现象
 * 物理模拟
 	向场景元素添加动态行为，检测接触和碰撞，模拟重力、弹簧和车辆等逼真效果。
 	
-###Particle Systems 粒子系统
+### Particle Systems 粒子系统
 * class SCNParticleSystem
 	
 	使用高级仿真对你指定的一般动作对小图像精灵系统做动画和模拟的对象。
@@ -113,7 +113,7 @@ SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D�
 	
 	实现一个自定义文档文件格式来管理用户与不同的云存储提供者存储的文件之间的互动。
 	
-###Audio 音频
+### Audio 音频
 
 * class SCNAudioSource
 	
@@ -123,7 +123,7 @@ SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D�
 	
 	在SceneKit场景中播放位置性音源的控制器。
 	
-###Renderer Customization 渲染器的自定义
+### Renderer Customization 渲染器的自定义
 * protocol SCNShadable
 
 	使用Metal或OpenGL着色器程序渲染自定义SceneKit几何体和材质的方法
@@ -148,17 +148,17 @@ SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D�
 	
 	可以自行实现的一些方法，通过这些方法可以使用自定义Metal或OpenGL绘图代码来渲染节点的内容。
 	
-###Scene Asset Import 场景资源导入
+### Scene Asset Import 场景资源导入
 * class SCNSceneSource 
 	
 	管理与从文件或数据加载场景内容相关联的数据读取任务的对象。
 
-###JavaScript
+### JavaScript
 * func SCNExportJavaScriptModule(JSContext)
 
-		使SceneKit类和全局常量可用于指定的JavaScript上下文。
+	使SceneKit类和全局常量可用于指定的JavaScript上下文。
 
-###SceneKit Data Types
+### SceneKit Data Types
 *	SceneKit 3D Data Types
 	
 	SceneKit特定的向量，矩阵以及相关的函数和操作。
