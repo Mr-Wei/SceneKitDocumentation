@@ -5,7 +5,7 @@ SceneKit结合了高性能的渲染引擎与用于导入，操作，和渲染3D�
 
 ##Topics
 ###First Steps
-* class SCNScene  
+* [class SCNScene](https://github.com/Mr-Wei/SceneKitDocumentation/blob/master/SceneKit/SCNScene/SCNScene.md) 
 
 	节点层次结构和全局属性的容器，共同形成可显示的3D场景。
 * class SCNView
